@@ -14,6 +14,7 @@
 		4171E4372AA4C82000E9BF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4171E4352AA4C82000E9BF49 /* LaunchScreen.storyboard */; };
 		4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */; };
 		4171E4412AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */; };
+		4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,8 @@
 		4171E4382AA4C82000E9BF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsButton.swift; sourceTree = "<group>"; };
 		4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddSubViews+Extensions.swift"; sourceTree = "<group>"; };
-		4171E4482AA4E44600E9BF49 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4171E4492AA4E6E300E9BF49 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				4171E4382AA4C82000E9BF49 /* Info.plist */,
 				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
 				4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */,
+				4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */,
 			);
 			path = MyWords;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				4171E42B2AA4C81A00E9BF49 /* AppDelegate.swift in Sources */,
 				4171E4412AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift in Sources */,
 				4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */,
+				4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */,
 				4171E42D2AA4C81A00E9BF49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,7 +161,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4171E4362AA4C82000E9BF49 /* Base */,
-				4171E4482AA4E44600E9BF49 /* tr */,
+				4171E4492AA4E6E300E9BF49 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
