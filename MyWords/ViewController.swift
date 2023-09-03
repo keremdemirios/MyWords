@@ -11,23 +11,30 @@ class ViewController: UIViewController {
     
     // MARK : UI Elements
     
+    let options = OptionsButton(backgroundColor: .white, title: "Choose 1")
+    
     // MARK : Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         configure()
     }
     // MARK : Configure
     private func configure(){
         setupUI()
     }
+    
     // MARK : Setup UI
     private func setupUI(){
-        
+        view.addSubViews(options)
+        NSLayoutConstraint.activate([
+            options.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            options.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
     // MARK : Functions
     
     // MARK : Actions
-
+    
 }
 
