@@ -23,6 +23,9 @@ class ViewController: UIViewController {
     // MARK : Configure
     private func configure(){
         setupUI()
+        
+        myWordsButton.addTarget(self, action: #selector(myWordsTapped), for: .touchUpInside)
+        exploreNewWordsButton.addTarget(self, action: #selector(newWordsTapped), for: .touchUpInside)
     }
     
     // MARK : Setup UI
@@ -45,6 +48,20 @@ class ViewController: UIViewController {
     // MARK : Functions
     
     // MARK : Actions
+    @objc func myWordsTapped() {
+        print("My words came.")
+        let vc = MyWordsViewController()
+        vc.modalPresentationStyle = .fullScreen
+//        vc.modalTransitionStyle = .flipHorizontal // bunu myWords ve newWords arasi gecisinde kullan.
+//        present(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
+    @objc func newWordsTapped() {
+        print("New words came.")
+        let vc = ExploreNewWordsViewController()
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

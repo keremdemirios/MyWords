@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41693D452AAB7D5C007FFD75 /* MyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41693D442AAB7D5C007FFD75 /* MyWordsViewController.swift */; };
+		41693D482AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41693D472AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift */; };
 		4171E42B2AA4C81A00E9BF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E42A2AA4C81A00E9BF49 /* AppDelegate.swift */; };
 		4171E42D2AA4C81A00E9BF49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E42C2AA4C81A00E9BF49 /* SceneDelegate.swift */; };
 		4171E42F2AA4C81A00E9BF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E42E2AA4C81A00E9BF49 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41693D442AAB7D5C007FFD75 /* MyWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWordsViewController.swift; sourceTree = "<group>"; };
+		41693D472AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreNewWordsViewController.swift; sourceTree = "<group>"; };
 		4171E4272AA4C81A00E9BF49 /* MyWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4171E42A2AA4C81A00E9BF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4171E42C2AA4C81A00E9BF49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
 				4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */,
 				4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */,
+				41693D442AAB7D5C007FFD75 /* MyWordsViewController.swift */,
+				41693D472AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift */,
 			);
 			path = MyWords;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 			files = (
 				4171E42F2AA4C81A00E9BF49 /* ViewController.swift in Sources */,
 				4171E42B2AA4C81A00E9BF49 /* AppDelegate.swift in Sources */,
+				41693D452AAB7D5C007FFD75 /* MyWordsViewController.swift in Sources */,
 				4171E4412AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift in Sources */,
 				4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */,
+				41693D482AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift in Sources */,
 				4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */,
 				4171E42D2AA4C81A00E9BF49 /* SceneDelegate.swift in Sources */,
 			);
