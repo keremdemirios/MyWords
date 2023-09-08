@@ -35,14 +35,6 @@ class OptionsButton: UIButton {
         
         layer.borderWidth = 1
         layer.borderColor = UIColor.black.cgColor
-        
-        // Actions
-        addTarget(self, action: #selector(tapped), for: .touchUpInside)
-    }
-    
-    @objc func tapped(){
-        print("Tapped.")
-        backgroundColor = .red
     }
 }
 

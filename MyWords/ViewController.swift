@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     // MARK : UI Elements
     
-    let options = OptionsButton(backgroundColor: .white, title: "Choose 1")
+    let myWordsButton = OptionsButton(backgroundColor: .white, title: "My Words")
+    let exploreNewWordsButton = OptionsButton(backgroundColor: .white, title: "Explore New Words")
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -26,12 +27,19 @@ class ViewController: UIViewController {
     
     // MARK : Setup UI
     private func setupUI(){
-        view.addSubViews(options)
+        view.addSubViews(myWordsButton, exploreNewWordsButton)
         NSLayoutConstraint.activate([
-            options.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            options.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            options.widthAnchor.constraint(equalToConstant: 150),
-            options.heightAnchor.constraint(equalToConstant: 40)
+            // my words constraints
+            myWordsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            myWordsButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 250),
+            myWordsButton.widthAnchor.constraint(equalToConstant: 200),
+            myWordsButton.heightAnchor.constraint(equalToConstant: 40),
+            
+            // explore words constraints
+            exploreNewWordsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            exploreNewWordsButton.topAnchor.constraint(equalTo: myWordsButton.bottomAnchor, constant: 40),
+            exploreNewWordsButton.widthAnchor.constraint(equalToConstant: 200),
+            exploreNewWordsButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     // MARK : Functions
