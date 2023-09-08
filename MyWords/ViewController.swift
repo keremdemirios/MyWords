@@ -29,7 +29,9 @@ class ViewController: UIViewController {
         view.addSubViews(options)
         NSLayoutConstraint.activate([
             options.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            options.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            options.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            options.widthAnchor.constraint(equalToConstant: 150),
+            options.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
     // MARK : Functions

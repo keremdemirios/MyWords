@@ -42,6 +42,7 @@ class OptionsButton: UIButton {
     
     @objc func tapped(){
         print("Tapped.")
+        backgroundColor = .red
     }
 }
 
