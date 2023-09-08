@@ -28,7 +28,7 @@ class OptionsButton: UIButton {
     private func configure(){
         translatesAutoresizingMaskIntoConstraints = false
         
-        isEnabled = false
+//        isEnabled = false
         layer.cornerRadius = 10
         titleLabel?.textColor = .black
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
