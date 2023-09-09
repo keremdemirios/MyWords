@@ -17,15 +17,18 @@ class ViewController: UIViewController {
     // MARK : Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
+        title = "My Words"
         configure()
     }
     // MARK : Configure
     private func configure(){
         setupUI()
-        
+        // Words buttons
         myWordsButton.addTarget(self, action: #selector(myWordsTapped), for: .touchUpInside)
         exploreNewWordsButton.addTarget(self, action: #selector(newWordsTapped), for: .touchUpInside)
+        // Hide back button
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     // MARK : Setup UI
@@ -52,8 +55,6 @@ class ViewController: UIViewController {
         print("My words came.")
         let vc = MyWordsViewController()
         vc.modalPresentationStyle = .fullScreen
-//        vc.modalTransitionStyle = .flipHorizontal // bunu myWords ve newWords arasi gecisinde kullan.
-//        present(vc, animated: true)
         navigationController?.pushViewController(vc, animated: true)
     }
     

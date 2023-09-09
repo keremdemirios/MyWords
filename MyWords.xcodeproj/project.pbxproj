@@ -46,6 +46,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41693D492AAB80A2007FFD75 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4171E42E2AA4C81A00E9BF49 /* ViewController.swift */,
+				41693D442AAB7D5C007FFD75 /* MyWordsViewController.swift */,
+				41693D472AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		4171E41E2AA4C81A00E9BF49 = {
 			isa = PBXGroup;
 			children = (
@@ -67,15 +77,13 @@
 			children = (
 				4171E42A2AA4C81A00E9BF49 /* AppDelegate.swift */,
 				4171E42C2AA4C81A00E9BF49 /* SceneDelegate.swift */,
-				4171E42E2AA4C81A00E9BF49 /* ViewController.swift */,
+				41693D492AAB80A2007FFD75 /* Controllers */,
 				4171E4332AA4C82000E9BF49 /* Assets.xcassets */,
 				4171E4352AA4C82000E9BF49 /* LaunchScreen.storyboard */,
 				4171E4382AA4C82000E9BF49 /* Info.plist */,
 				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
 				4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */,
 				4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */,
-				41693D442AAB7D5C007FFD75 /* MyWordsViewController.swift */,
-				41693D472AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift */,
 			);
 			path = MyWords;
 			sourceTree = "<group>";
