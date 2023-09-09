@@ -23,9 +23,9 @@ class MyWordsViewController: UIViewController {
         // hide back button
         self.navigationItem.setHidesBackButton(true, animated: true)
         // Switch viewcontroller button - right bar button
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "globe"), style: .done, target: self, action: #selector(rightNavigationButtonTapped))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "globe")?.withTintColor(.label, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(rightNavigationButtonTapped))
         // Home button -  left bar button
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "house"), style: .done, target: self, action: #selector(leftNavigationButtonTapped))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "house")?.withTintColor(.label, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(leftNavigationButtonTapped))
         
     }
     // MARK : Setup UI
@@ -34,18 +34,35 @@ class MyWordsViewController: UIViewController {
     }
     // MARK : Functions
     
+    // MARK : Alerts section
+    func showAlert(completion: @escaping () -> Void) {
+        let alert = UIAlertController(title: "Go to Explore Words", message: "Do you want to go to Explore Words? ", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            print("OK tapped.")
+            completion()
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
+            print("Cancel dismiss.")
+        }))
+        present(alert, animated: true)
+    }
+    
     // MARK : Actions
     @objc func rightNavigationButtonTapped() {
-        let vc = ExploreNewWordsViewController()
-        vc.modalPresentationStyle = .fullScreen
-        vc.modalTransitionStyle = .flipHorizontal
-        navigationController?.pushViewController(vc, animated: true)
+        showAlert {
+            let vc = ExploreNewWordsViewController()
+            vc.modalPresentationStyle = .fullScreen
+            vc.modalTransitionStyle = .flipHorizontal
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     @objc func leftNavigationButtonTapped(){
         let vc = ViewController()
         vc.modalPresentationStyle = .fullScreen
-//        present(vc, animated: true)
+        //        present(vc, animated: true)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

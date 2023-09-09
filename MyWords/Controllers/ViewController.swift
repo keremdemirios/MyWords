@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         exploreNewWordsButton.addTarget(self, action: #selector(newWordsTapped), for: .touchUpInside)
         // Hide back button
         self.navigationItem.setHidesBackButton(true, animated: true)
+        
+        // set mode view - right bar button
+//        let imageName = UIImage(systemName: "circle.lefthalf.filled")
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "circle.lefthalf.filled")?.withTintColor(.label, renderingMode: .alwaysOriginal), style: .done, target: self, action: #selector(changeMode))
     }
     
     // MARK : Setup UI
@@ -63,6 +67,20 @@ class ViewController: UIViewController {
         let vc = ExploreNewWordsViewController()
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // change mode - dark and light
+    @objc func changeMode() {
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+        let interfaceStyle = window?.overrideUserInterfaceStyle == .unspecified ? UIScreen.main.traitCollection.userInterfaceStyle : window?.overrideUserInterfaceStyle
+        
+        if interfaceStyle != .dark {
+            window?.overrideUserInterfaceStyle = .dark
+        } else {
+            window?.overrideUserInterfaceStyle = .light
+        }
     }
 }
 
