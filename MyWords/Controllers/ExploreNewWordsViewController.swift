@@ -1,4 +1,5 @@
-//
+// TO DO : Anasayfaya renk modlarini ekle.
+// TO DO : Ekrna gecislerindeki right bar button itemlar icin direkt gecirme. Once bir alert ver oyle gecmelerine izin ver.
 //  ExploreNewWordsViewController.swift
 //  MyWords
 //
