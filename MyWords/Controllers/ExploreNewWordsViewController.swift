@@ -1,4 +1,5 @@
 // TO DO : Change mode butonuna kendi rengini koyma esnekligi icin bir sey olustur.
+// TO DO : My Words kismina gecisteki icon'u daha guzel bir icon ile degistir. Profil izlenimi veriyor kullaniciya.
 //  ExploreNewWordsViewController.swift
 //  MyWords
 //
