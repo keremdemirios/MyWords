@@ -1,4 +1,4 @@
-// TO DO : Anasayfaya renk modlarini ekle.
+// TO DO : Change mode butonuna kendi rengini koyma esnekligi icin bir sey olustur.
 //  ExploreNewWordsViewController.swift
 //  MyWords
 //
