@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     
     // MARK : UI Elements
     
-    let myWordsButton = OptionsButton(backgroundColor: .white, title: "My Words")
-    let exploreNewWordsButton = OptionsButton(backgroundColor: .white, title: "Explore New Words")
+    let myWordsButton = OptionsButton(backgroundColor: .label, title: "My Words")
+    let exploreNewWordsButton = OptionsButton(backgroundColor: .label, title: "Explore New Words")
     
     // MARK : Life Cycle
     override func viewDidLoad() {

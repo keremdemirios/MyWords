@@ -21,20 +21,18 @@ class OptionsButton: UIButton {
         super.init(frame: .zero)
         self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
-        self.setTitleColor(.black, for: .normal)
+        self.setTitleColor(.systemBackground, for: .normal)
         configure()
     }
     
     private func configure(){
         translatesAutoresizingMaskIntoConstraints = false
         
-//        isEnabled = false
-        layer.cornerRadius = 10
+        
         titleLabel?.textColor = .black
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.black.cgColor
+        makeCircular(cornerRadius: 10, borderWidth: 1, borderColor: .label)
     }
 }
 

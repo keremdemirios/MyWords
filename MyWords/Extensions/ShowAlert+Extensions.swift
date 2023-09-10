@@ -18,8 +18,10 @@ extension UIViewController {
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
             print("Cancel dismiss.")
+            completion()
         }))
         present(alert, animated: true)
     }
 
 }
+
