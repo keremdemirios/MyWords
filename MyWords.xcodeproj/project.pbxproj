@@ -17,6 +17,7 @@
 		4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */; };
 		4171E4412AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */; };
 		4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */; };
+		41E40AAB2AAE67A7006E0558 /* ShowAlert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E40AAA2AAE67A7006E0558 /* ShowAlert+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddSubViews+Extensions.swift"; sourceTree = "<group>"; };
 		4171E4492AA4E6E300E9BF49 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		41E40AAA2AAE67A7006E0558 /* ShowAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowAlert+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +77,58 @@
 		4171E4292AA4C81A00E9BF49 /* MyWords */ = {
 			isa = PBXGroup;
 			children = (
-				4171E42A2AA4C81A00E9BF49 /* AppDelegate.swift */,
-				4171E42C2AA4C81A00E9BF49 /* SceneDelegate.swift */,
+				41E40AA62AAE6701006E0558 /* Model */,
+				41E40AA82AAE670A006E0558 /* View */,
+				41E40AA92AAE670C006E0558 /* ViewModel */,
 				41693D492AAB80A2007FFD75 /* Controllers */,
-				4171E4332AA4C82000E9BF49 /* Assets.xcassets */,
+				41E40AA32AAE65B7006E0558 /* Extensions */,
+				41E40AA52AAE65F6006E0558 /* Resources */,
 				4171E4352AA4C82000E9BF49 /* LaunchScreen.storyboard */,
 				4171E4382AA4C82000E9BF49 /* Info.plist */,
-				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
-				4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */,
-				4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */,
 			);
 			path = MyWords;
+			sourceTree = "<group>";
+		};
+		41E40AA32AAE65B7006E0558 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4171E4402AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift */,
+				4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */,
+				41E40AAA2AAE67A7006E0558 /* ShowAlert+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41E40AA52AAE65F6006E0558 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4171E42C2AA4C81A00E9BF49 /* SceneDelegate.swift */,
+				4171E42A2AA4C81A00E9BF49 /* AppDelegate.swift */,
+				4171E4332AA4C82000E9BF49 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41E40AA62AAE6701006E0558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41E40AA82AAE670A006E0558 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41E40AA92AAE670C006E0558 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +206,7 @@
 				4171E42B2AA4C81A00E9BF49 /* AppDelegate.swift in Sources */,
 				41693D452AAB7D5C007FFD75 /* MyWordsViewController.swift in Sources */,
 				4171E4412AA4DA1D00E9BF49 /* AddSubViews+Extensions.swift in Sources */,
+				41E40AAB2AAE67A7006E0558 /* ShowAlert+Extensions.swift in Sources */,
 				4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */,
 				41693D482AAB7D6E007FFD75 /* ExploreNewWordsViewController.swift in Sources */,
 				4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */,

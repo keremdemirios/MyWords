@@ -36,31 +36,15 @@ class ExploreNewWordsViewController: UIViewController {
     }
     // MARK : Functions
     
-    // MARK : Alerts section
-    func showAlert(completion: @escaping () -> Void) {
-        let alert = UIAlertController(title: "Go to My Words", message: "Do you want to go to My Words? ", preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-            print("OK tapped.")
-            completion()
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
-            print("Cancel dismiss.")
-        }))
-        present(alert, animated: true)
-    }
-    
     // MARK : Actions
     @objc func rightNavigationButtonTapped() {
-        showAlert {
+        showAlert(title: "Go to My Words", message: "Do you want to go to My Words?") {
             let vc = MyWordsViewController()
             vc.modalPresentationStyle = .fullScreen
             vc.modalTransitionStyle = .flipHorizontal
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
     @objc func leftNavigationButtonTapped(){
         let vc = ViewController()
         vc.modalPresentationStyle = .fullScreen
