@@ -15,3 +15,6 @@ extension UIView {
         })
     }
 }
+
+
+// NOTE : TEK TEK addSubvVew kullanmak yerine toplu bir sekilde kod kalabaligindan kaciniyoruz. Ogren bunu mutlaka.
