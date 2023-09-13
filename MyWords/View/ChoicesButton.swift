@@ -1,4 +1,4 @@
-//
+// TO DO : Butonun seklini text'ine gore sekillendir.
 //  ChoicesButton.swift
 //  MyWords
 //
@@ -20,7 +20,6 @@ class ChoicesButton: UIButton {
     init(title: String, target:Any?, action:Selector) {
         super.init(frame: .zero)
         self.setTitle(title, for: .normal)
-        self.titleLabel?.numberOfLines = 0
         addTarget(target, action: action, for: .touchUpInside)
         configure()
     }
@@ -28,6 +27,8 @@ class ChoicesButton: UIButton {
     private func configure(){
         translatesAutoresizingMaskIntoConstraints = false
         
+//        titleLabel?.minimumScaleFactor = 0.5;
+//        titleLabel?.adjustsFontSizeToFitWidth = true;
         titleLabel?.textColor = .black
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         

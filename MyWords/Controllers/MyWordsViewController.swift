@@ -9,7 +9,7 @@ import UIKit
 
 class MyWordsViewController: UIViewController {
     // MARK : UI Elements
-    lazy var mainWord = ChoicesButton(title: "Apple", target: self, action: #selector(mainWordTapped))
+    lazy var mainWord = ChoicesButton(title: "I want you.", target: self, action: #selector(mainWordTapped))
     
     // MARK : Life Cycle
     override func viewDidLoad() {
