@@ -5,7 +5,6 @@
 //  Created by Kerem Demir on 3.09.2023.
 //
 
-import Foundation
 import UIKit
 
 extension UIView {

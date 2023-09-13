@@ -17,6 +17,7 @@
 		4171E43F2AA4D19300E9BF49 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */; };
 		4171E4412AA4DA1D00E9BF49 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E4402AA4DA1D00E9BF49 /* UIView+Extensions.swift */; };
 		4171E44B2AA4E89200E9BF49 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */; };
+		41BE857A2AB238E400F576C2 /* ChoicesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BE85792AB238E400F576C2 /* ChoicesButton.swift */; };
 		41E40AAB2AAE67A7006E0558 /* ShowAlert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E40AAA2AAE67A7006E0558 /* ShowAlert+Extensions.swift */; };
 		41E40AAD2AAE6F16006E0558 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E40AAC2AAE6F16006E0558 /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		4171E4402AA4DA1D00E9BF49 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4171E4492AA4E6E300E9BF49 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4171E44A2AA4E89200E9BF49 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		41BE85792AB238E400F576C2 /* ChoicesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoicesButton.swift; sourceTree = "<group>"; };
 		41E40AAA2AAE67A7006E0558 /* ShowAlert+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowAlert+Extensions.swift"; sourceTree = "<group>"; };
 		41E40AAC2AAE6F16006E0558 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				4171E43E2AA4D19300E9BF49 /* OptionsButton.swift */,
+				41BE85792AB238E400F576C2 /* ChoicesButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				4171E42F2AA4C81A00E9BF49 /* ViewController.swift in Sources */,
 				41E40AAD2AAE6F16006E0558 /* UIButton+Extensions.swift in Sources */,
+				41BE857A2AB238E400F576C2 /* ChoicesButton.swift in Sources */,
 				4171E42B2AA4C81A00E9BF49 /* AppDelegate.swift in Sources */,
 				41693D452AAB7D5C007FFD75 /* MyWordsViewController.swift in Sources */,
 				4171E4412AA4DA1D00E9BF49 /* UIView+Extensions.swift in Sources */,
