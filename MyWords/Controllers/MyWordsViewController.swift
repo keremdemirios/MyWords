@@ -9,7 +9,7 @@ import UIKit
 
 class MyWordsViewController: UIViewController {
     // MARK : UI Elements
-    var mainWord = ChoicesButton(title: "Apple")
+    lazy var mainWord = ChoicesButton(title: "Apple", target: self, action: #selector(mainWordTapped))
     
     // MARK : Life Cycle
     override func viewDidLoad() {
@@ -33,7 +33,6 @@ class MyWordsViewController: UIViewController {
     // MARK : Setup UI
     private func setupUI(){
         view.addSubViews(mainWord)
-        mainWord.addTarget(self, action: #selector(mainWordTapped), for: .touchUpInside)
         NSLayoutConstraint.activate([
             mainWord.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             mainWord.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50)

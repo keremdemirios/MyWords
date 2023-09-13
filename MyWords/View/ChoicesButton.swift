@@ -17,10 +17,11 @@ class ChoicesButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(title: String) {
+    init(title: String, target:Any?, action:Selector) {
         super.init(frame: .zero)
         self.setTitle(title, for: .normal)
         self.titleLabel?.numberOfLines = 0
+        addTarget(target, action: action, for: .touchUpInside)
         configure()
     }
     
