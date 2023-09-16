@@ -1,4 +1,4 @@
-//
+// TO DO : ŞIKLAR OLUŞTUR 4 ADET
 //  ViewController.swift
 //  MyWords
 //
